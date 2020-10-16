@@ -103,7 +103,8 @@ body {
   #navbar {
     max-height: 250px;
     width: 100%;
-    border-bottom: 5px dotted silver;
+    border-bottom: 5px double silver;
+    overflow: auto;
   }
   #main-doc {
     margin-left: 0;
