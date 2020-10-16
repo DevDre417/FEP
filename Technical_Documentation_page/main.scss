@@ -92,8 +92,10 @@ body {
   padding: 0px 50px 40px 15px;
   margin-bottom: 20px;
   margin-right: 20px;
-  white-space: pre;
   line-height: 1.2;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 //////////~MEDIA QUERIES~//////////
