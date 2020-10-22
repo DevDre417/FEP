@@ -1,0 +1,18 @@
+//////////////ICONS////////////////////
+.fa-github {
+  position: relative;
+  top: 4px;
+}
+
+.fa-github::after {
+  display: block;
+  content: "Github";
+  font-size: 1rem;
+}
+
+.fa-envelope::after {
+  display: block;
+  content: "Email";
+  font-size: 1rem;
+}
+////////////////////////////////////////

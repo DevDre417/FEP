@@ -1,0 +1,38 @@
+//////////////Navigation//////////////////
+@media only screen and (max-width: 800px) {
+  #main-nav ul {
+    justify-content: center;
+    li {
+      padding: 0;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main-section {
+    flex-direction: column;
+
+    #skills_contact-container {
+      width: 100%;
+    }
+
+    #skills-container {
+      display: flex;
+      gap: 40px;
+      #frontend,
+      #backend {
+        padding: 20px;
+      }
+    }
+
+    #contact_me {
+      height: 50vh;
+      flex-direction: row;
+      .fa-github {
+        top: 0;
+      }
+    }
+  }
+}
