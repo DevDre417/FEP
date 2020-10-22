@@ -30,20 +30,7 @@
     #skills_contact-container {
       height: 100vh;
       min-width: 100vw;
-      h2 {
-        padding-top: 40px;
-      }
     }
-
-    #skills-container {
-      display: flex;
-      gap: 40px;
-      #frontend,
-      #backend {
-        padding: 20px;
-      }
-    }
-
     #contact_me {
       flex-direction: row;
       .fa-github {

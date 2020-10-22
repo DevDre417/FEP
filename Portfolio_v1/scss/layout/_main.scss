@@ -110,11 +110,21 @@ body {
 
 #skills {
   background-color: aquamarine;
+  #skills-container {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    #frontend,
+    #backend {
+      padding: 20px;
+    }
+  }
 }
 
 ///////////////////////////////////////
 #contact_me {
   background-color: blueviolet;
+  flex-direction: row;
   .fa {
     font-size: 5rem;
   }
