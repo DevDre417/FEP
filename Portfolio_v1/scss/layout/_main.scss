@@ -72,7 +72,7 @@ body {
 }
 
 #prj1 {
-  background-image: url("../img/survey.jpg");
+  background-image: url("/./img/survey.jpg");
 }
 
 #prj2 {
@@ -83,7 +83,7 @@ body {
 }
 
 #prj4 {
-  background-image: url(".../../img/tribute.jpg");
+  background-image: url("../../img/tribute.JPG");
 }
 
 ////////////////////////////////////////////
@@ -114,6 +114,7 @@ body {
     display: flex;
     gap: 50px;
     flex-direction: row;
+
     #frontend,
     #backend {
       padding: 20px;
