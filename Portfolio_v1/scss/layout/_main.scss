@@ -13,10 +13,11 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: "Lemonada", cursive;
 }
 
@@ -34,6 +35,7 @@ body {
   background-color: $bg;
   background: $bluegrad;
   width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -46,7 +48,6 @@ body {
 
 ////PROJECTS//////
 #prj-container {
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -62,18 +63,18 @@ body {
 }
 
 #prj1 {
-  background-image: url("/img/survey.jpg");
+  background-image: url("img/survey.jpg");
 }
 
 #prj2 {
-  background-image: url("/img/product.jpg");
+  background-image: url("img/product.jpg");
 }
 #prj3 {
-  background-image: url("/img/technical.jpg");
+  background-image: url("img/technical.jpg");
 }
 
 #prj4 {
-  background-image: url("/img/tribute.jpg");
+  background-image: url("img/tribute.jpg");
 }
 
 ////////////////////////////////////////////

@@ -1,5 +1,5 @@
-//////////////Navigation//////////////////
-@media only screen and (max-width: 800px) {
+//////////////NAVIGATION//////////////////
+@media only screen and (max-width: 837px) {
   #main-nav ul {
     justify-content: center;
     li {
@@ -10,12 +10,30 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+//////////////PROJECTS////////////////////////
+@media only screen and (max-width: 837px) {
+  #prj-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/////////////////////SKILLS & CONTACT////////////////////
+@media only screen and (max-width: 1118px) {
   #main-section {
     flex-direction: column;
 
+    .project-tile {
+      width: 400px;
+      height: 300px;
+    }
+
     #skills_contact-container {
+      height: 100vh;
       width: 100%;
+      h2 {
+        padding-top: 40px;
+      }
     }
 
     #skills-container {
@@ -28,7 +46,6 @@
     }
 
     #contact_me {
-      height: 50vh;
       flex-direction: row;
       .fa-github {
         top: 0;
