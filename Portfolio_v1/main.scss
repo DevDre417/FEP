@@ -1,0 +1,184 @@
+$bluegrad: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+$bg: #0093e9;
+///////////////////////
+
+$bg2: #625d50;
+$redgrad: linear-gradient(160deg, #625d50 0%, #ff5e03 100%);
+
+////////////////////////
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Lemonada", cursive;
+}
+
+////////////NAVIGATION///////////////
+
+#main-nav {
+  margin: 0 auto;
+  background-color: #a6f6f1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: right;
+  ul {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  li {
+    display: inline-block;
+    padding: 15px 80px 15px 0;
+    font-size: 1.21rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main-nav ul {
+    justify-content: center;
+    li {
+      padding: 0;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+/////////////////MAIN SECTIONS///////////////////
+
+//About ME//
+#about {
+  background-color: $bg;
+  background: $bluegrad;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  border: 0;
+}
+
+@media only screen and (max-height: 600px) {
+  #about {
+    background-color: $bg2;
+    background: $redgrad;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #about {
+    background-color: $bg2;
+    background: $redgrad;
+  }
+}
+
+////PROJECTS//////
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  min-width: 80vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#projects::before {
+  content: "hi";
+}
+
+#prj-container {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-tile {
+  width: 400px;
+  height: 300px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#prj1 {
+  background-image: url("/img/survey.jpg");
+}
+
+#prj2 {
+  background-image: url("/img/product.jpg");
+}
+#prj3 {
+  background-image: url("/img/technical.jpg");
+}
+
+#prj4 {
+  background-image: url("/img/tribute.jpg");
+}
+
+////////////////////////////////////////////
+#skills_contact {
+  background-color: #625d50;
+  min-height: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.S1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li {
+    text-align: left;
+    list-style-position: inside;
+  }
+}
+
+#skills {
+  background-color: aquamarine;
+}
+
+///////////////////////////////////////
+#contact_me {
+  background-color: blueviolet;
+  .fa {
+    font-size: 5rem;
+  }
+  a {
+    outline: 0;
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+  }
+}
+
+.fa-github::after {
+  display: block;
+  content: "Github";
+  font-size: 1rem;
+}
+
+.fa-envelope::after {
+  display: block;
+  content: "Email";
+  font-size: 1rem;
+}
