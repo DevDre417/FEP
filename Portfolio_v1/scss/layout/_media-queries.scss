@@ -12,20 +12,16 @@
 
 //////////////PROJECTS////////////////////////
 @media only screen and (max-width: 837px) {
-  #prj-container {
-    color: red;
+  .project-tile {
+    width: 300px;
+    height: 200px;
   }
 }
 
 /////////////////////SKILLS & CONTACT////////////////////
-@media only screen and (max-width: 1118px) {
+@media only screen and (max-width: 1125px) {
   #main-section {
     flex-direction: column;
-
-    .project-tile {
-      width: 400px;
-      height: 300px;
-    }
 
     #skills_contact-container {
       height: 100vh;
@@ -33,9 +29,6 @@
     }
     #contact_me {
       flex-direction: row;
-      .fa-github {
-        top: 0;
-      }
     }
   }
 }
@@ -43,5 +36,11 @@
 @media only screen and (max-width: 500px) {
   #about {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  #skills_contact-container {
+    font-size: 0.7rem;
   }
 }
