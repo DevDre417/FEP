@@ -25,13 +25,17 @@
 
     #skills_contact-container {
       height: 100vh;
-      min-width: 100vw;
+      width: 100%;
+      #skills-container {
+        gap: 50px;
+      }
     }
     #contact_me {
       flex-direction: row;
     }
   }
 }
+////////////////////////////////////////////////////////////
 
 @media only screen and (max-width: 500px) {
   #about {
@@ -40,7 +44,17 @@
 }
 
 @media screen and (max-width: 1264px) {
-  #skills_contact-container {
-    font-size: 0.7rem;
+  #skills {
+    color: white;
+    #skills-container {
+      display: flex;
+      gap: 0;
+      flex-direction: row;
+
+      #frontend,
+      #backend {
+        padding: 10px;
+      }
+    }
   }
 }
