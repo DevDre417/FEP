@@ -105,12 +105,11 @@ body {
 
 ////////////////////////////////////////////
 #skills_contact-container {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(164, 116, 158, 1) 67%,
-    rgba(123, 84, 134, 1) 100%
+  background: rgb(124, 131, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(124, 131, 164, 0.9) 19%,
+    rgba(203, 183, 121, 0.9) 92%
   );
   min-height: 100%;
   display: flex;
