@@ -1,12 +1,11 @@
 ////////////NAVIGATION///////////////
 #main-nav {
   margin: 0 auto;
-  background-color: #f1f1f1;
   width: 100%;
-  position: fixed;
   padding: 5px;
-  top: 0;
   text-align: right;
+  position: absolute;
+  top: 0;
   ul {
     display: flex;
     align-items: center;
@@ -15,11 +14,11 @@
   li {
     display: inline-block;
     padding: 0 80px 0 0;
-    font-size: 1.21rem;
+    font-size: 1.8rem;
   }
   a {
     text-decoration: none;
-    color: black;
+    color: rgba($color: #e6e67b, $alpha: 0.5);
     outline: 0;
   }
 }

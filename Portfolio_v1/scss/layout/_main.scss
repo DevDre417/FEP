@@ -43,16 +43,22 @@ body {
 //About ME//
 #about {
   background-color: $bg;
-  background-image: $bluegrad;
-
+  background-image: url(../../img/sunset.jpg);
+  background-size: cover;
+  position: relative;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
   margin: 0;
+  .underTxt {
+    font-size: 1.7rem;
+    width: 600px;
+  }
 }
 
 ////PROJECTS//////
@@ -91,8 +97,12 @@ body {
 
 ////////////////////////////////////////////
 #skills_contact-container {
-  background-color: $bg;
-  background-image: $bluegrad;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(95, 26, 113, 1) 100%
+  );
   background-color: #625d50;
   min-height: 100%;
   display: flex;
