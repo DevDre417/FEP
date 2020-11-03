@@ -42,8 +42,7 @@ body {
 
 //About ME//
 #about {
-  background-color: $bg;
-  background-image: url(../../img/sunset.jpg);
+  background-image: url(../../img/nyc.jpg);
   background-size: cover;
   position: relative;
   min-height: 100vh;
@@ -51,13 +50,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgba($color: #d4d468, $alpha: 1);
+  text-shadow: 1px 6px;
   font-size: 6rem;
+  font-size: 6vw;
   text-align: center;
   margin: 0;
   .underTxt {
     font-size: 1.7rem;
+    font-size: 2vw;
+    font-style: italic;
+    font-family: "Turret Road", cursive;
     width: 600px;
+    margin: 0 auto;
+    font-weight: 900;
+    text-shadow: none;
+    color: white;
   }
 }
 
@@ -101,9 +109,9 @@ body {
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
-    rgba(95, 26, 113, 1) 100%
+    rgba(164, 116, 158, 1) 67%,
+    rgba(123, 84, 134, 1) 100%
   );
-  background-color: #625d50;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -125,6 +133,7 @@ body {
 
 #skills {
   color: white;
+  font-size: 1.21vw;
   #skills-container {
     display: flex;
     gap: 50px;
