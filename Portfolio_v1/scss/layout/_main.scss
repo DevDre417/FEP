@@ -105,12 +105,7 @@ body {
 
 ////////////////////////////////////////////
 #skills_contact-container {
-  background: rgb(124, 131, 164);
-  background: linear-gradient(
-    90deg,
-    rgba(124, 131, 164, 0.9) 19%,
-    rgba(203, 183, 121, 0.9) 92%
-  );
+  background: linear-gradient(#ebeaea, #f4c3b6, #d1d0ad);
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -131,7 +126,6 @@ body {
 }
 
 #skills {
-  color: white;
   font-size: 1.21vw;
   #skills-container {
     display: flex;
