@@ -24,9 +24,7 @@
     #skills_contact-container {
       height: 100vh;
       width: 100%;
-      #skills-container {
-        gap: 50px;
-      }
+      font-size: clamp(16px, 2vw, 30px);
     }
     #contact_me {
       flex-direction: row;
@@ -34,25 +32,37 @@
   }
 }
 ////////////////////////////////////////////////////////////
+////SKILLS
+@media screen and (max-width: 1264px) {
+  #skills-container {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
 
-@media only screen and (max-width: 500px) {
-  #about {
-    max-width: 100%;
+    #frontend,
+    #backend {
+      padding: 10px;
+    }
   }
 }
 
-@media screen and (max-width: 1264px) {
-  #skills {
-    color: white;
-    #skills-container {
-      display: flex;
-      gap: 0;
-      flex-direction: row;
+/////////////Small Screens//////////////////
+@media only screen and (max-width: 593px) {
+  .underTxt {
+    max-width: 450px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
 
-      #frontend,
-      #backend {
-        padding: 10px;
-      }
-    }
+///////////////////Super Small/////////
+@media only screen and (max-width: 273px) {
+  #skills-container {
+    flex-direction: column;
+  }
+  #frontend,
+  #backend {
+    padding: 0;
+    margin: 0;
   }
 }
