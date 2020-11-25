@@ -11,9 +11,8 @@ $redgrad: linear-gradient(160deg, #625d50 0%, #ff5e03 100%);
   transition: 0.7s;
   text-decoration: solid;
   animation-name: highlight;
-  animation-duration: 1.1s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  transition-timing-function: ease-out;
 }
 
 html {
@@ -79,7 +78,7 @@ body {
   }
 }
 
-.abm,
+#abm,
 .underTxt {
   @include Intro;
 }
