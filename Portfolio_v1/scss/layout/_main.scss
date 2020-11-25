@@ -69,6 +69,40 @@ body {
   }
 }
 
+.abm,
+.underTxt {
+  opacity: 75%;
+  transition: 0.7s;
+  text-decoration: solid;
+  animation-name: highlight;
+  animation-duration: 1.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes highlight {
+  0% {
+    font-weight: light;
+    opacity: 0.1;
+    text-decoration: bold;
+  }
+  25% {
+    font-weight: normal;
+    text-decoration: solid;
+  }
+  50% {
+    font-weight: normal;
+    text-decoration: solid;
+  }
+  75% {
+    font-weight: lighter;
+    text-decoration: solid;
+  }
+  100% {
+    font-weight: lighter;
+    text-decoration: solid;
+  }
+}
+
 ////PROJECTS//////
 #prj-container {
   background-color: white;

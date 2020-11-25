@@ -62,7 +62,7 @@ getNewQuestion = () => {
   })
 
 
-availableQuestions.splice(questionIndex, 1);
+availableQuestions.splice(questionIndex, 1); 
 
 };
 
