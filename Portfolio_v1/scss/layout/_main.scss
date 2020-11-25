@@ -17,6 +17,7 @@ $redgrad: linear-gradient(160deg, #625d50 0%, #ff5e03 100%);
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -60,7 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   color: rgba($color: #d4d468, $alpha: 1);
-  text-shadow: 1px 6px;
+  text-shadow: 1px 3px;
 
   font-size: clamp(36px, 6vw, 100px);
   text-align: center;
