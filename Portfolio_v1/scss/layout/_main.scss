@@ -86,25 +86,7 @@ body {
 
 @keyframes highlight {
   0% {
-    font-weight: 900;
     opacity: 0.1;
-    text-decoration: bold;
-  }
-  25% {
-    font-weight: normal;
-    text-decoration: solid;
-  }
-  50% {
-    font-weight: normal;
-    text-decoration: solid;
-  }
-  75% {
-    font-weight: lighter;
-    text-decoration: solid;
-  }
-  100% {
-    font-weight: lighter;
-    text-decoration: solid;
   }
 }
 
