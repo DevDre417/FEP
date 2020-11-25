@@ -120,6 +120,12 @@ body {
   color: gray;
 }
 
+.prjHighlight:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(23, 28, 31, 0.5);
+  transform: translatey(-0.1rem);
+  transition: transform 150ms;
+}
+
 #prj1 {
   background-image: url("../../img/survey.jpg");
 }
