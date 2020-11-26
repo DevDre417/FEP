@@ -16,6 +16,18 @@
   }
 }
 
+@media only screen and (max-width: 737px) {
+  .prjHighlight {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  .project-tile {
+    width: 350px;
+    height: 250px;
+  }
+}
+
 /////////////////////SKILLS & CONTACT////////////////////
 @media only screen and (max-width: 1125px) {
   #main-section {
