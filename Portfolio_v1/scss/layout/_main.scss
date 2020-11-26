@@ -7,6 +7,14 @@ $redgrad: linear-gradient(160deg, #625d50 0%, #ff5e03 100%);
 
 ////////////////////////
 
+@mixin projecttitles {
+  #prj1::after,
+  #prj2::after,
+  #prj3::after,
+  #prj4::after {
+  }
+}
+
 @mixin Intro {
   transition: 0.7s;
   text-decoration: solid;
@@ -114,14 +122,11 @@ body {
   border: 0.1px solid black;
 }
 
-.project-title {
-  position: relative;
-  top: 305px;
-  color: gray;
+.project-tile:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(23, 28, 31, 0.5);
 }
 
 .prjHighlight:hover {
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(23, 28, 31, 0.5);
   transform: translatey(0.125rem);
   transition: transform 125ms;
 }
@@ -130,16 +135,38 @@ body {
   background-image: url("../../img/survey.jpg");
 }
 
+// #prj1::after {
+//   content: "Survery Page";
+//   position: relative;
+//   top: 300px;
+// }
+
 #prj2 {
   background-image: url("../../img/product.jpg");
 }
+// #prj2::after {
+//   content: "Product Page";
+//   position: relative;
+//   top: 300px;
+// }
+
 #prj3 {
   background-image: url("../../img/technical.jpg");
 }
+// #prj3::after {
+//   content: "Technical Documentation Page";
+//   position: relative;
+//   top: 300px;
+// }
 
 #prj4 {
   background-image: url("../../img/tribute.jpg");
 }
+// #prj4::after {
+//   content: "Tribute Page";
+//   position: relative;
+//   top: 300px;
+// }
 
 ///////////////////Skulls & CONTACT/////////////////////////
 #skills_contact-container {
