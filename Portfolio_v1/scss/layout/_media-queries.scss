@@ -14,17 +14,16 @@
     width: 350px;
     height: 250px;
   }
+  .prjHighlight {
+    margin-top: -30px;
+  }
 }
 
 @media only screen and (max-width: 737px) {
   .prjHighlight {
+    margin-top: -10px;
     padding-top: 50px;
     padding-bottom: 25px;
-  }
-
-  .project-tile {
-    width: 350px;
-    height: 250px;
   }
 }
 

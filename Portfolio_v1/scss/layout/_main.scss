@@ -7,14 +7,6 @@ $redgrad: linear-gradient(160deg, #625d50 0%, #ff5e03 100%);
 
 ////////////////////////
 
-@mixin projecttitles {
-  #prj1::after,
-  #prj2::after,
-  #prj3::after,
-  #prj4::after {
-  }
-}
-
 @mixin Intro {
   transition: 0.7s;
   text-decoration: solid;
@@ -50,14 +42,6 @@ body {
 }
 /////////////////////////
 
-/////////////////MAIN SECTIONS///////////////////
-#main-section {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  text-align: center;
-}
-
 //About ME//
 #about {
   background-image: url(../../img/nyc.jpg);
@@ -85,6 +69,14 @@ body {
     color: white;
     word-break: break-word;
   }
+}
+
+/////////////////MAIN SECTIONS///////////////////
+#main-section {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  text-align: center;
 }
 
 #abm,
