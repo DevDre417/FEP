@@ -87,6 +87,7 @@
 @media only screen and (max-width: 273px) {
   #skills-container {
     flex-direction: column;
+    min-width: 0;
   }
   #frontend,
   #backend {
