@@ -43,6 +43,12 @@ const MAX_QUESTIONS = 3;
 
 
 startGame = () => {
+
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
+        //go to the end page
+        return window.location.assign('/end.html')
+    }
+
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
@@ -68,7 +74,13 @@ acceptingAnswers = true;
 
 choices.forEach(choice => {
   choice.addEventListener('click', e => {
-    cosole.log(e.target);
+    if (!acceptingAnswers) return;
+
+    acceptingAnswers = false;
+    const selectedChoice = e.target;
+    const selectedAanswer = selectedChoice.dataset['number'];
+
+
   })
 })
 };
