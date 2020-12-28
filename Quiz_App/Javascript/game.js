@@ -46,7 +46,7 @@ startGame = () => {
 
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
         //go to the end page
-        return window.location.assign('/end.html')
+        return window.location.assign('/end.html');
     }
 
   questionCounter = 0;
@@ -80,7 +80,10 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAanswer = selectedChoice.dataset['number'];
 
+    const classToApply = selectedAanswer == currenntQuestion.answer ? "correct" : "incorrect";
 
+
+    getNewQuestion();
   })
 })
 };
