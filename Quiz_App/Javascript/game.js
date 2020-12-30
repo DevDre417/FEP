@@ -82,11 +82,17 @@ choices.forEach(choice => {
 
     const classToApply = selectedAanswer == currenntQuestion.answer ? "correct" : "incorrect";
 
+    selectedChoice.parentElement.classList.add(classToApply);
 
-    getNewQuestion();
-  })
-})
-};
+    setTimeout( () =>{
+      selectedChoice.parentElement.classList.remove(classToApply);
+      getNewQuestion();
+    }, 1000);
+
+    
+  });
+}
+)};
 
 
 startGame();
