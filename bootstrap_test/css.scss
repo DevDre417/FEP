@@ -5,14 +5,13 @@ html {
   margin: 0;
   padding: 0;
 }
-
+///////////////NAVIGATION/////////////////
 #main-nav {
   background: #f1f1f1;
   height: 8rem;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 li {
@@ -21,3 +20,51 @@ li {
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+@mixin asdas {
+  border-radius: 2.5rem;
+  font-size: 1.8rem;
+}
+
+#s1 {
+  background-color: #e60023;
+  color: white;
+  @include asdas;
+}
+
+#s2 {
+  background-color: grey;
+  @include asdas;
+}
+
+@mixin nav {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  @include nav;
+  justify-content: flex-start;
+}
+
+.right {
+  @include nav;
+  justify-content: flex-end;
+}
+
+////Logo/////
+.fa-pinterest {
+  font-size: 1.6rem;
+  color: #e60023;
+}
+
+///Search button//
+.bttn {
+  all: unset;
+  position: relative;
+  bottom: 27px;
+  cursor: default;
+  pointer-events: none;
+}
+
+//////////////////////////////////////////////
