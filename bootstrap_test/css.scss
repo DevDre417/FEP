@@ -17,13 +17,12 @@ html {
 li {
   display: inline;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 @mixin asdas {
   border-radius: 2.5rem;
-  font-size: 1.8rem;
 }
 
 #s1 {
@@ -48,6 +47,8 @@ li {
 }
 
 .right {
+  margin-right: 10px;
+  padding: 0;
   @include nav;
   justify-content: flex-end;
 }
@@ -68,8 +69,13 @@ li {
   pointer-events: none;
 }
 
-.inp {
-  width: 400px;
+.center {
+  max-width: 100%;
+  width: 1200rem;
+  .inp {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .cnt {
