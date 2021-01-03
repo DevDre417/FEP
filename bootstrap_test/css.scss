@@ -62,9 +62,16 @@ li {
 .bttn {
   all: unset;
   position: relative;
-  bottom: 27px;
+  bottom: 23px;
+  left: 0.5rem;
   cursor: default;
   pointer-events: none;
+}
+
+.cnt {
+  border: 5px solid black;
+  padding: 15px;
+  border-radius: 2rem;
 }
 
 //////////////////////////////////////////////
