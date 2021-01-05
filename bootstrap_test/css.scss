@@ -13,11 +13,18 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  padding: 0 5px;
+}
+
 #main-nav {
 }
 
+li {
+  display: inline;
+}
 ////test//////
 
 .col {
-  background-color: red;
+  background-color: gray;
 }
