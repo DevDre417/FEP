@@ -4,40 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/css/css.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>P Clone</title>
 </head>
 <body>
-  <nav class="col-md-12" id="main-nav"> 
-    <div class="left">
-      <i class="fa fa-pinterest fa-3x">Pinterest</i>
-      <li>Today</li>
-      <li>Explore</li>
+  <!-- Navigation -->
+  <nav class="container-fluid row" id="main-nav"> 
+    <div class="left .col-md-3">
+      <i class="fa fa-pinterest fa-2x">Pinterest</i>
+      <ul>
+        <li>Today</li>
+        <li>Explore</li>
+      </ul>
     </div>
     <!--Searchbox-->
-    <div class="center">
+    <div class="center .col-md-3">
       <form action="">
         <div class="cnt">
-          <input type="text" placeholder="Search for easy dinners, fashion, etc." name="search" class="inp">
+          <label for="search" class="wop"><i class="fa fa-search"></i></label>
+          <input type="text" placeholder="Search for easy dinners, fashion, etc." name="search" class="inp form-control">
         </div>
         
-        <!-- <button type="submit" class="bttn"><i class="fa fa-search"></i></button> -->
+       
       </form>
 
     </div>
-    <div class="right">
+
+    /////////////
+    <div class="right .col-md-3">
       <ul>
         <li id="s1">Log in</li>
         <li id="s2">Sign up</li>
-        </ul>
+      </ul>
+        
       </div>
       </nav>
-    
 
+      
+      <div class="gridrow">
+        <div class="col1">col1</div>
+        <div class="col2">col2</div>
+        <div class="col3">col3</div>
+        <div class="col4">col4g</div>
+      </div>
 
+      
 
-
+      <div class="row">
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-2">2</div>
+        <div class="col col-span-3">3</div>
+        <div class="col col-span-4">4</div>
+        <div class="col col-span-2">2</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-5">5
+          <p>Sotto un cespo di rose scarlatte dai al rospo the caldo col latte.</p>
+          <p>Sotto un cespo di rose paonazze tocca al rospo lavare le tazze.</p>
+        </div>
+        <div class="col col-span-3">3</div>
+        <div class="col col-span-4">4</div>
+      </div>
+        
+      <div class="row">
+        <div class="col col-span-6">6
+          <div class="row nested">
+            <div class="col col-span-7">7</div>
+            <div class="col col-span-2">2</div>
+            <div class="col col-span-3">3</div>
+          </div>
+        </div>
+        <div class="col col-span-6">6
+          <div class="row nested wide-fit">
+            <div class="col col-span-7">7</div>
+            <div class="col col-span-2">2</div>
+            <div class="col col-span-3">3</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row center">
+        <div class="col col-span-6">6
+          <div class="row nested wide-fit">
+            <div class="col col-span-7">7</div>
+            <div class="col col-span-2">2</div>
+            <div class="col col-span-3">3</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row center">
+        <div class="col col-span-3">3</div>
+        <div class="col col-span-3">3</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-7">7</div>
+        <div class="col col-span-2">2</div>
+        <div class="col col-span-3">3</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-8">8</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-3">3</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-9">9</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-2">2</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-10">10</div>
+        <div class="col col-span-1">1</div>
+        <div class="col col-span-1">1</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-11">11</div>
+        <div class="col col-span-1">1</div>
+      </div>
+      
+      <div class="row">
+        <div class="col col-span-12">12</div>
+      </div>
+      
+      <div class="row center">
+        <div class="col col-span-6">6</div>
+      </div>
+      
+      <div class="row center">
+        <div class="col col-span-3">3</div>
+        <div class="col col-span-3">3</div>
+      </div>
+      
+      <div class="row">
+        <div class="col fixed-width">
+          <p>Fixed width column</p>
+        </div>
+        <div class="col">
+          <div class="row nested">
+            <div class="col col-span-7">7</div>
+            <div class="col col-span-2">2</div>
+            <div class="col col-span-3">3</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col fixed-width">
+          <p>Fixed width column</p>
+        </div>
+        <div class="col">
+          <div class="row nested wide-fit">
+            <div class="col col-span-7">7</div>
+            <div class="col col-span-2">2</div>
+            <div class="col col-span-3">3</div>
+          </div>
+        </div>
+      </div>
+        
 
 
 
