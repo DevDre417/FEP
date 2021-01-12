@@ -61,7 +61,7 @@ nav {
   height: 1000px;
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: 0;
   transform: translateY(-50%);
 }
 
@@ -73,4 +73,48 @@ nav {
   left: 0;
   border-radius: 50%;
   background: #ccc;
+}
+
+.feature {
+  position: absolute;
+  display: flex;
+  color: white;
+  img {
+    width: 70px;
+  }
+  div {
+    margin-left: 30px;
+  }
+  p {
+    margin-top: 8px;
+  }
+}
+
+.one {
+  top: 50px;
+  left: 450px;
+}
+
+.two {
+  top: 450px;
+  right: 50px;
+}
+
+.three {
+  bottom: 50px;
+  right: 450px;
+}
+
+.four {
+  top: 450px;
+  left: 50px;
+}
+
+.mobile {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
