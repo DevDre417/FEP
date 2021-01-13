@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-image: url("/Images/sunny.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px 15px;
+  input {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 15px;
+  }
+}
