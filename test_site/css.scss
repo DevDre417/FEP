@@ -20,7 +20,7 @@ body {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #379e92, #006be6);
+  background: linear-gradient(to right, #31ba9b, #317fd8);
 }
 
 nav {
@@ -34,6 +34,8 @@ nav {
 
 .logo {
   flex-basis: 20%;
+  position: relative;
+  left: -5.5%;
   img {
     width: 150px;
   }
