@@ -3,7 +3,7 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 } 
 
-const searchBx = document.querySelector(".searchBox");
+const searchBx = document.querySelector('.search-box');
 searchBx.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
@@ -19,7 +19,7 @@ function getResults(query){
 }
 
 function displayResults(weather){
-  console.log(weather);
+  console.log(weather)
   let city = document.querySelector('.location .city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
 
@@ -28,13 +28,20 @@ function displayResults(weather){
   date.innerText =  dateBuilder(now);
 
   let temp = document.querySelector('.current .temp');
-  temp.innerText = `${Math.round(weather.main.temp)}<span>°C</span>`;
+  temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
+
+  let weather_el = document.querySelector('.weather');
+  weather_el.innerText = weather.weather[0].description;
+
+  let hi_low = document.querySelector('.hi-low');
+  hi_low.innerText = `${weather.main.temp_min}°C / ${weather.main.temp_max}°C`;
+  
 }
 
 
 function dateBuilder(d) {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const days = ["Sun","Mon","Tues","Wed","thurs","Fri","Sat"];
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
   let day = days[d.getDay()];
   let date = d.getDate();
