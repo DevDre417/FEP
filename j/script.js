@@ -43,6 +43,12 @@ btn2.onclick = function () {newel.innerText = count++;}
 btn3.onclick = function () {newel.innerText = count--;}
 
 
+let btn4 = document.createElement('button');
+document.body.appendChild(btn4);
 
-
-
+btn4.innerText = 'see what your entered';
+btn4.onclick = function gab(){
+  let wab = document.createElement('div')
+  wab.innerText = document.getElementById('todo-title').value;
+  document.body.appendChild(wab);
+}
