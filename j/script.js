@@ -32,10 +32,15 @@ let btn2 = document.createElement('button');
 document.body.appendChild(btn2);
 btn2.innerText = 'Up';
 
+let btn3 = document.createElement('button');
+document.body.appendChild(btn3);
+btn3.innerText = 'down';
+
 let count = 0;
 newel.innerText= count;
 
 btn2.onclick = function () {newel.innerText = count++;}
+btn3.onclick = function () {newel.innerText = count--;}
 
 
 
