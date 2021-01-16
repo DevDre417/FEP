@@ -6,10 +6,11 @@
 
 body {
   font-family: "montserrat", sans-serif;
-  background-image: url("/images/sunny.jpg");
+  background-image: url(/Images/sunny.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .app-wrap {
@@ -19,11 +20,21 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.overlay {
+  opacity: 1;
   background: linear-gradient(
     to bottom,
     rgba(179, 214, 238, 0.3),
     rgba(0, 139, 245, 0.6)
   );
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 header {
@@ -50,7 +61,6 @@ header {
 }
 
 main {
-  padding: 25px 25px 50px;
   text-align: center;
 }
 
