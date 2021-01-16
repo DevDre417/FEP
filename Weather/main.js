@@ -34,7 +34,7 @@ function displayResults(weather){
   weather_el.innerText = weather.weather[0].description;
 
   let hi_low = document.querySelector('.hi-low');
-  hi_low.innerText = `${weather.main.temp_min}°C / ${weather.main.temp_max}°C`;
+  hi_low.innerText = `${Math.round(weather.main.temp_min)}°C / ${Math.round(weather.main.temp_max)}°C`;
 }
 
 
