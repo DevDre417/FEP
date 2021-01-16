@@ -35,8 +35,9 @@ function displayResults(weather){
 
   let hi_low = document.querySelector('.hi-low');
   hi_low.innerText = `${weather.main.temp_min}°C / ${weather.main.temp_max}°C`;
-  
 }
+
+
 
 
 function dateBuilder(d) {
