@@ -41,6 +41,20 @@ function render(){
   }) ;
 }  
 
+const cartArray = [{
+  name: 'Apple',
+  price: 4,
+  quantity: 2
+},{
+  name: 'Orange',
+  price: 3,
+  quantity: 3
+},{
+  name: 'Bread',
+  price: 10,
+  quantity: 5
+}
+]
 
 //
 const cartTotal = arr => {
@@ -51,33 +65,12 @@ const cartTotal = arr => {
     x = arr[i].price * arr[i].quantity;
     z.push(x);
   }
-  let a = z.reduce((a,b) => a+b);
-  console.log(a);
+  var a = z.reduce((a,b) => a+b);
+  
 }
-
-const cartArray = [{
-  name: 'Apple',
-  price: 4,
-  quantity: 2
-},{
-  name: 'Orange',
-  price: 3,
-  quantity: 3
-},{
-  name: 'Oransadge',
-  price: 33,
-  quantity: 23
-},{
-  name: 'Oasdasadge',
-  price: 3,
-  quantity: 26
-}
-]
-
-
 cartTotal(cartArray);
 
-
+//
 
 let recep = document.createElement('div');
 recep.id = 'receipt';
@@ -87,11 +80,7 @@ const displayReceipt = arr => {
   recep.innerHTML = '';
 
 let g = [];
-let e = g[0];
-let b = g[1];
-  
-  let x = document.createElement('div')
-  document.body.appendChild(x);
+let z = [];
 
   for(let i=0;i<arr.length;i++) {
     let x = document.createElement('div')
@@ -99,16 +88,17 @@ let b = g[1];
 
     x.innerText = `${arr[i].name} $${arr[i].price}*${arr[i].quantity} = ${arr[i].price*arr[i].quantity}`;
     g.push(x.innerText)
-    console.log(x);
-
+  
   }
-  console.log(g)
+  let tot = document.createElement('div')
+  document.body.appendChild(tot);
+
+  for (let i=0;i<arr.length;i++){
+    x = arr[i].price * arr[i].quantity;
+    z.push(x);
+  }
+  var a = z.reduce((a,b) => a+b);
+  tot.innerText = `Cart total = $${a}`;
 }
-
-
-
-
-
-
 
 displayReceipt(cartArray);
