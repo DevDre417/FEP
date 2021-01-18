@@ -1,25 +1,30 @@
-let todos = ['Get Groceries','Wash car','Make dinner'];
+const todos = ['Get Groceries','Wash car','Make dinner'];
 
 
 render();
 
 
 function addTodo() {
-  let textbox = document.getElementById('todo-title');
-  let title = textbox.value;
+  const textbox = document.getElementById('todo-title');
+  const title = textbox.value;
   todos.push(title);
+
+  const datepicker = document.getElementById('date-picker');
+  const dueDate = datepicker.value;
   
   render();
 }
 
 function render(){
   //reset our list to be empty
+  document.getElementById('todo-list').innerHTML = '';
 
   
   todos.forEach(function (todoTitle) {
-    let element = document.createElement('div');
+    const element = document.createElement('div');
     element.innerText = todoTitle;
-    let todolist = document.getElementById('todo-list');
+    const todolist = document.getElementById('todo-list');
     todolist.appendChild(element);
   }) ;
-}
+}  
+
