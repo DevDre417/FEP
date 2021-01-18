@@ -63,14 +63,52 @@ const cartArray = [{
   name: 'Orange',
   price: 3,
   quantity: 3
+},{
+  name: 'Oransadge',
+  price: 33,
+  quantity: 23
+},{
+  name: 'Oasdasadge',
+  price: 3,
+  quantity: 26
 }
 ]
 
 
 cartTotal(cartArray);
 
-let p = 0;
-for (let n of cartArray){
- let b = n.price * n.quantity + p
-console.log(b);
+
+
+let recep = document.createElement('div');
+recep.id = 'receipt';
+document.body.appendChild(recep);
+
+const displayReceipt = arr => {
+  recep.innerHTML = '';
+
+let g = [];
+let e = g[0];
+let b = g[1];
+  
+  let x = document.createElement('div')
+  document.body.appendChild(x);
+
+  for(let i=0;i<arr.length;i++) {
+    let x = document.createElement('div')
+    document.body.appendChild(x);
+
+    x.innerText = `${arr[i].name} $${arr[i].price}*${arr[i].quantity} = ${arr[i].price*arr[i].quantity}`;
+    g.push(x.innerText)
+    console.log(x);
+
+  }
+  console.log(g)
 }
+
+
+
+
+
+
+
+displayReceipt(cartArray);
