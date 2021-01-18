@@ -3,16 +3,12 @@ const todos = [{
   dueDate: '01-01-1990'
 },
 {
-  title:'Get Groceries', 
-  dueDate: '02-02-1991'
-},
-{
   title: 'Wash car',
-  dueDate: '03-03-1992'
+  dueDate: '03-03-1991'
 },
 {
   title: 'Make dinner',
-  dueDate: '04-04-1993'
+  dueDate: '04-04-1992'
 }];
 
 
@@ -27,7 +23,8 @@ function addTodo() {
   const datepicker = document.getElementById('date-picker');
   const dueDate = datepicker.value;
 
-  todos.push(title);
+  todos.push({title: title,
+  dueDate: dueDate});
   render();
 }
 
@@ -36,11 +33,44 @@ function render(){
   document.getElementById('todo-list').innerHTML = '';
 
   
-  todos.forEach(function (todoTitle) {
+  todos.forEach(function (todo) {
     const element = document.createElement('div');
-    element.innerText = todoTitle;
+    element.innerText = `${todo.title} ${todo.dueDate}`;
     const todolist = document.getElementById('todo-list');
     todolist.appendChild(element);
   }) ;
 }  
 
+
+//
+const cartTotal = arr => {
+  let x; 
+  let z = [];
+  
+  for (let i=0;i<arr.length;i++){
+    x = arr[i].price * arr[i].quantity;
+    z.push(x);
+  }
+  let a = z.reduce((a,b) => a+b);
+  console.log(a);
+}
+
+const cartArray = [{
+  name: 'Apple',
+  price: 4,
+  quantity: 2
+},{
+  name: 'Orange',
+  price: 3,
+  quantity: 3
+}
+]
+
+
+cartTotal(cartArray);
+
+let p = 0;
+for (let n of cartArray){
+ let b = n.price * n.quantity + p
+console.log(b);
+}
