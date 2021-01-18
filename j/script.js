@@ -1,4 +1,19 @@
-const todos = ['Get Groceries','Wash car','Make dinner'];
+const todos = [{
+  title: 'Get Groceries',
+  dueDate: '01-01-1990'
+},
+{
+  title:'Get Groceries', 
+  dueDate: '02-02-1991'
+},
+{
+  title: 'Wash car',
+  dueDate: '03-03-1992'
+},
+{
+  title: 'Make dinner',
+  dueDate: '04-04-1993'
+}];
 
 
 render();
@@ -7,11 +22,12 @@ render();
 function addTodo() {
   const textbox = document.getElementById('todo-title');
   const title = textbox.value;
-  todos.push(title);
+  
 
   const datepicker = document.getElementById('date-picker');
   const dueDate = datepicker.value;
-  
+
+  todos.push(title);
   render();
 }
 
