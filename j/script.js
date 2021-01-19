@@ -41,64 +41,64 @@ function render(){
   }) ;
 }  
 
-const cartArray = [{
-  name: 'Apple',
-  price: 4,
-  quantity: 2
-},{
-  name: 'Orange',
-  price: 3,
-  quantity: 3
-},{
-  name: 'Bread',
-  price: 10,
-  quantity: 5
-}
-]
+// const cartArray = [{
+//   name: 'Apple',
+//   price: 4,
+//   quantity: 2
+// },{
+//   name: 'Orange',
+//   price: 3,
+//   quantity: 3
+// },{
+//   name: 'Bread',
+//   price: 10,
+//   quantity: 5
+// }
+// ]
 
-//
-const cartTotal = arr => {
-  let x; 
-  let z = [];
+// //
+// const cartTotal = arr => {
+//   let x; 
+//   let z = [];
   
-  for (let i=0;i<arr.length;i++){
-    x = arr[i].price * arr[i].quantity;
-    z.push(x);
-  }
-  var a = z.reduce((a,b) => a+b);
+//   for (let i=0;i<arr.length;i++){
+//     x = arr[i].price * arr[i].quantity;
+//     z.push(x);
+//   }
+//   var a = z.reduce((a,b) => a+b);
   
-}
-cartTotal(cartArray);
+// }
+// cartTotal(cartArray);
 
-//
+// //
 
-let recep = document.createElement('div');
-recep.id = 'receipt';
-document.body.appendChild(recep);
+// let recep = document.createElement('div');
+// recep.id = 'receipt';
+// document.body.appendChild(recep);
 
-const displayReceipt = arr => {
-  recep.innerHTML = '';
+// const displayReceipt = arr => {
+//   recep.innerHTML = '';
 
-let g = [];
-let z = [];
+// let g = [];
+// let z = [];
 
-  for(let i=0;i<arr.length;i++) {
-    let x = document.createElement('div')
-    document.body.appendChild(x);
+//   for(let i=0;i<arr.length;i++) {
+//     let x = document.createElement('div')
+//     document.body.appendChild(x);
 
-    x.innerText = `${arr[i].name} $${arr[i].price}*${arr[i].quantity} = ${arr[i].price*arr[i].quantity}`;
-    g.push(x.innerText)
+//     x.innerText = `${arr[i].name} $${arr[i].price}*${arr[i].quantity} = ${arr[i].price*arr[i].quantity}`;
+//     g.push(x.innerText)
   
-  }
-  let tot = document.createElement('div')
-  document.body.appendChild(tot);
+//   }
+//   let tot = document.createElement('div')
+//   document.body.appendChild(tot);
 
-  for (let i=0;i<arr.length;i++){
-    x = arr[i].price * arr[i].quantity;
-    z.push(x);
-  }
-  var a = z.reduce((a,b) => a+b);
-  tot.innerText = `Cart total = $${a}`;
-}
+//   for (let i=0;i<arr.length;i++){
+//     x = arr[i].price * arr[i].quantity;
+//     z.push(x);
+//   }
+//   var a = z.reduce((a,b) => a+b);
+//   tot.innerText = `Cart total = $${a}`;
+// }
 
-displayReceipt(cartArray);
+// displayReceipt(cartArray);
