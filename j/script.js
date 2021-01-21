@@ -70,19 +70,9 @@ function deleteTodo(event) {
 }
 
 
-const createCart = () => {
 
-  for (let items in pricesOfFood) {
-   
-    let z = document.createElement('div');
-    z.innerText = items;
-    document.body.appendChild(z);
-    
-}
 
-}
-
-let total = 0;
+//
 
 const pricesOfFood = {
   Apple: 3,
@@ -90,9 +80,16 @@ const pricesOfFood = {
   Egg: 2
 }
 
+let total = 0;
+let xe = Object.keys(pricesOfFood);
+
+const createCart = () => {
+}
+
+
+
+console.log(xe)
 createCart(pricesOfFood);
-
-
 
 
 
