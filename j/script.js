@@ -39,7 +39,6 @@ function addTodo() {
 
 
 
-
 function render(){
   //reset our list to be empty
   document.getElementById('todo-list').innerHTML = '';
@@ -63,10 +62,38 @@ function render(){
 
   }) ;
 }  
-function deleteTodo (event) {
+
+
+function deleteTodo(event) {
   const deleteButton = event.target;
   const idtodelete = deleteButton.id
 }
+
+
+const createCart = () => {
+
+  for (let items in pricesOfFood) {
+   
+    let z = document.createElement('div');
+    z.innerText = items;
+    document.body.appendChild(z);
+    
+}
+
+}
+
+let total = 0;
+
+const pricesOfFood = {
+  Apple: 3,
+  Orange: 4,
+  Egg: 2
+}
+
+createCart(pricesOfFood);
+
+
+
 
 
 
