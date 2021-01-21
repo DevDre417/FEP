@@ -69,11 +69,7 @@ function deleteTodo(event) {
   const idtodelete = deleteButton.id
 }
 
-
-
-
 //
-
 const pricesOfFood = {
   Apple: 3,
   Orange: 4,
@@ -83,9 +79,6 @@ let total = 0;
 const createCart = () => {
   let names = Object.keys(pricesOfFood);
   let prices = Object.values(pricesOfFood);
-  console.log(names);
-  console.log(prices);
-
 
   for(let i=0;i<names.length;i++) {
   let el = document.createElement('div');
@@ -93,18 +86,19 @@ const createCart = () => {
   el.innerHTML = names[i] + ' $' + price;
   document.body.appendChild(el);
   let btn = document.createElement('button');
+  let btn2 = document.createElement('button')
   el.appendChild(btn)
   btn.innerText = 'Add';
+  btn.style.margin = '3px 0 0 10px'
+
   btn.onclick = function  totalz(){
     let tot = (total = total + prices[i]);
-    console.log(tot);
+    tote.innerText = `Total Price: $${tot}`;
     return tot;
-    
 }
     }
-
-  
+  let tote = document.createElement('div')
+  document.body.appendChild(tote);
 }
 
-
-createCart(pricesOfFood)
+createCart(pricesOfFood);
