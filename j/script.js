@@ -79,80 +79,32 @@ const pricesOfFood = {
   Orange: 4,
   Egg: 2
 }
-
 let total = 0;
-let xe = Object.keys(pricesOfFood);
-
 const createCart = () => {
+  let names = Object.keys(pricesOfFood);
+  let prices = Object.values(pricesOfFood);
+  console.log(names);
+  console.log(prices);
+
+
+  for(let i=0;i<names.length;i++) {
+  let el = document.createElement('div');
+  let price = prices[i];
+  el.innerHTML = names[i] + ' $' + price;
+  document.body.appendChild(el);
+  let btn = document.createElement('button');
+  el.appendChild(btn)
+  btn.innerText = 'Add';
+  btn.onclick = function  totalz(){
+    let tot = (total = total + prices[i]);
+    console.log(tot);
+    return tot;
+    
+}
+    }
+
+  
 }
 
 
-
-console.log(xe)
-createCart(pricesOfFood);
-
-
-
-
-// const cartArray = [{
-//   name: 'Apple',
-//   price: 4,
-//   quantity: 2
-// },{
-//   name: 'Orange',
-//   price: 3,
-//   quantity: 3
-// },{
-//   name: 'Bread',
-//   price: 10,
-//   quantity: 5
-// }
-// ]
-
-// //
-// const cartTotal = arr => {
-//   let x; 
-//   let z = [];
-  
-//   for (let i=0;i<arr.length;i++){
-//     x = arr[i].price * arr[i].quantity;
-//     z.push(x);
-//   }
-//   var a = z.reduce((a,b) => a+b);
-  
-// }
-// cartTotal(cartArray);
-
-// //
-
-// let recep = document.createElement('div');
-// recep.id = 'receipt';
-// document.body.appendChild(recep);
-
-// const displayReceipt = arr => {
-//   recep.innerHTML = '';
-
-// let g = [];
-// let z = [];
-
-//   for(let i=0;i<arr.length;i++) {
-//     let x = document.createElement('div')
-//     document.body.appendChild(x);
-
-//     x.innerText = `${arr[i].name} $${arr[i].price}*${arr[i].quantity} = ${arr[i].price*arr[i].quantity}`;
-//     g.push(x.innerText)
-  
-//   }
-//   let tot = document.createElement('div')
-//   document.body.appendChild(tot);
-
-//   for (let i=0;i<arr.length;i++){
-//     x = arr[i].price * arr[i].quantity;
-//     z.push(x);
-//   }
-//   var a = z.reduce((a,b) => a+b);
-//   tot.innerText = `Cart total = $${a}`;
-// }
-
-// displayReceipt(cartArray);
-
+createCart(pricesOfFood)
