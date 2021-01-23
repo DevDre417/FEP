@@ -77,3 +77,25 @@ todos = todos.filter(function (todo) {
   });
   render();
 }
+
+
+
+let arrr = [55,-2,4,3,5];
+
+const max = (arrr) => Math.max(...arrr);
+const min = (arrr) => Math.min(...arrr);
+
+const minx = (arrr) => {
+let d =[]
+  arrr.forEach(function (a){
+    if(a>=0){
+      d.push(a);
+    };
+  })
+return Math.min(...d);
+}
+
+
+console.log(max(arrr));
+console.log(min(arrr));
+console.log(minx(arrr));
