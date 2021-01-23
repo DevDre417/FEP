@@ -80,22 +80,41 @@ todos = todos.filter(function (todo) {
 
 
 
-let arrr = [55,-2,4,3,5];
+let arrr = [55,-2,4,3,5,1,2,0,-3];
 
 const max = (arrr) => Math.max(...arrr);
 const min = (arrr) => Math.min(...arrr);
 
-const minx = (arrr) => {
-let d =[]
-  arrr.forEach(function (a){
-    if(a>=0){
-      d.push(a);
-    };
-  })
-return Math.min(...d);
-}
+const minx = arrr.filter((item) => item >= 0);
+
 
 
 console.log(max(arrr));
 console.log(min(arrr));
-console.log(minx(arrr));
+console.log(minx);
+
+
+
+const fruits = ['cherry','apple','orange','apple','banana','apple', 'orange']
+
+const pickApples = (s) => {
+  let d =[]
+  fruits.forEach(function (a){
+    if(a !== 'apple'){
+      d.push(a);
+    };
+  })
+  d.push('apple');
+return d;
+}
+
+const pickFruits = (s) => x = [...new Set(s)];
+const pickFruitsx = (s) => {
+   
+   console.log(s);
+}
+
+
+console.log(pickApples(fruits));
+console.log(pickFruits(fruits));
+console.log(pickFruitsx(fruits));
