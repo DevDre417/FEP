@@ -1,4 +1,4 @@
-const todos = [{
+let todos = [{
   title: 'Get Groceries',
   dueDate: '01-01-1990',
   id: 'id1'
@@ -66,5 +66,14 @@ function render(){
 
 function deleteTodo(event) {
   const deleteButton = event.target;
-  const idtodelete = deleteButton.id
+  const idTodelete = deleteButton.id
+
+todos = todos.filter(function (todo) {
+    if (todo.id === idTodelete) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+  render();
 }
