@@ -1,3 +1,5 @@
+
+//Model
 let todos = [{
   title: 'Get Groceries',
   dueDate: '01-01-1990',
@@ -17,7 +19,7 @@ let todos = [{
 
 render();
 
-//Creating todo
+//Creating Todo
 const createTodo = (title,dueDate) => {
   const id = new Date().getTime();
 
@@ -27,8 +29,23 @@ const createTodo = (title,dueDate) => {
   id: id
 });
 }
+/////////////////////////
 
 
+//Delete Todo
+function removeTodo(idToDelete) {
+  todos = todos.filter(function (todo) {
+    if (todo.id == idToDelete) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+  render();
+}
+
+
+//Controller
 function addTodo() {
   const textbox = document.getElementById('todo-title');
   const title = textbox.value;
@@ -43,6 +60,16 @@ function addTodo() {
 };
 
 
+function deleteTodo(event) {
+  const deleteButton = event.target;
+  const idToDelete = deleteButton.id
+  removeTodo(idToDelete);
+  
+}
+/////////////////////////////////////////////
+
+
+//View
 function render(){
   //reset our list to be empty
   document.getElementById('todo-list').innerHTML = '';
@@ -70,71 +97,4 @@ function render(){
 
 
 
-function deleteTodo(event) {
-  const deleteButton = event.target;
-  const idTodelete = deleteButton.id
 
-todos = todos.filter(function (todo) {
-    if (todo.id == idTodelete) {
-      return false;
-    } else {
-      return true;
-    }
-  });
-  render();
-}
-
-
-
-let arrr = [55,-2,4,3,5,1,2,0,-3];
-
-const max = (arrr) => Math.max(...arrr);
-const min = (arrr) => Math.min(...arrr);
-
-const minx = arrr.filter((item) => item >= 0);
-
-
-
-console.log(max(arrr));
-console.log(min(arrr));
-console.log(minx);
-
-
-
-const fruits = ['cherry','apple','orange','apple','banana','apple']
-
-const pickApples = (s) => {
-  let d =[]
-  s.forEach(function (a){
-    if(a !== 'apple'){
-      d.push(a);
-    };
-  })
-  d.push('apple');
-return d;
-}
-
-const pickFruits = (s) => x = [...new Set(s)];
-
-const pickFruitsx = (s) => {
-  let d =[]
-  s.forEach(function (a){
-    if(a !== 'apple' && a !== 'orange'){
-      d.push(a);
-    };
-  })
-  d.push('apple');
-  d.push('Orange');
-return d;
-}
-
-
-let pickLastApples = (s) => {
-  return s.pop();
-}
-
-
-console.log(pickApples(fruits));
-console.log(pickFruits(fruits));
-console.log(pickFruitsx(fruits));
-console.log(pickLastApples(fruits));
