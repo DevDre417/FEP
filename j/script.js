@@ -17,6 +17,17 @@ let todos = [{
 
 render();
 
+//Creating todo
+const createTodo = (title,dueDate) => {
+  const id = new Date().getTime();
+
+  todos.push({
+  title: title,
+  dueDate: dueDate,
+  id: id
+});
+}
+
 
 function addTodo() {
   const textbox = document.getElementById('todo-title');
@@ -26,17 +37,10 @@ function addTodo() {
   const datepicker = document.getElementById('date-picker');
   const dueDate = datepicker.value;
 
-  const id = new Date().getTime();
-
-  todos.push({
-  title: title,
-  dueDate: dueDate,
-  id: id
-
-});
+  createTodo(title, dueDate);
   render();
-}
 
+};
 
 
 function render(){
@@ -62,6 +66,8 @@ function render(){
 
   }) ;
 }  
+
+
 
 
 function deleteTodo(event) {
@@ -95,11 +101,11 @@ console.log(minx);
 
 
 
-const fruits = ['cherry','apple','orange','apple','banana','apple', 'orange']
+const fruits = ['cherry','apple','orange','apple','banana','apple']
 
 const pickApples = (s) => {
   let d =[]
-  fruits.forEach(function (a){
+  s.forEach(function (a){
     if(a !== 'apple'){
       d.push(a);
     };
@@ -109,12 +115,26 @@ return d;
 }
 
 const pickFruits = (s) => x = [...new Set(s)];
+
 const pickFruitsx = (s) => {
-   
-   console.log(s);
+  let d =[]
+  s.forEach(function (a){
+    if(a !== 'apple' && a !== 'orange'){
+      d.push(a);
+    };
+  })
+  d.push('apple');
+  d.push('Orange');
+return d;
+}
+
+
+let pickLastApples = (s) => {
+  return s.pop();
 }
 
 
 console.log(pickApples(fruits));
 console.log(pickFruits(fruits));
 console.log(pickFruitsx(fruits));
+console.log(pickLastApples(fruits));
