@@ -82,12 +82,12 @@ function render(){
     const deleteButton = document.createElement('button');
     deleteButton.innerText = 'Delete';
     deleteButton.style.margin = "5px 0 0 10px";
-    
+  
 
     deleteButton.onclick = deleteTodo;
     deleteButton.id = todo.id;
     element.appendChild(deleteButton);
-    element.appendChild(checkBtn);
+  
 
 
     const todolist = document.getElementById('todo-list');
