@@ -1,21 +1,34 @@
 
 //Model
-let todos = [{
-  title: 'Get Groceries',
-  dueDate: '01-01-1990',
-  id: 'id1'
-},
-{
-  title: 'Wash car',
-  dueDate: '03-03-1991',
-  id: 'id2'
-},
-{
-  title: 'Make dinner',
-  dueDate: '04-04-1992',
-  id: 'id3'
-}];
+//if locaal storae has a today arry, use it.
+//else use default array
+let todos;
 
+
+//Retrieve localStorage
+const savedTodos = JSON.parse(localStorage.getItem('todoskey'));
+//Check if it's an array
+
+if(Array.isArray(savedTodos)){
+  todos = savedTodos;
+}else {
+  todos = [{
+    title: 'Get Groceries',
+    dueDate: '01-01-1990',
+    id: 'id1'
+  },
+  {
+    title: 'Wash car',
+    dueDate: '03-03-1991',
+    id: 'id2'
+  },
+  {
+    title: 'Make dinner',
+    dueDate: '04-04-1992',
+    id: 'id3'
+  }];
+
+}
 
 render();
 
@@ -28,6 +41,7 @@ const createTodo = (title,dueDate) => {
   dueDate: dueDate,
   id: id
 });
+  saveTodo();
 }
 /////////////////////////
 
@@ -41,12 +55,21 @@ function removeTodo(idToDelete) {
       return true;
     }
   });
+
   render();
+  saveTodo();
 }
+
+function saveTodo(){
+  localStorage.setItem('todoskey', JSON.stringify(todos));
+}
+
+
 
 
 //Controller
 function addTodo() {
+
   const textbox = document.getElementById('todo-title');
   const title = textbox.value;
   
@@ -96,6 +119,10 @@ function render(){
 
   }) ;
 }  
+
+////styling
+document.body.style = "height: 100vh; width: 100%;display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0"
+
 
 
 
