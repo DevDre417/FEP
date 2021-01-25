@@ -83,13 +83,6 @@ function render(){
     deleteButton.innerText = 'Delete';
     deleteButton.style.margin = "5px 0 0 10px";
     
-    const checkBtn = document.createElement('input');
-    checkBtn.type = 'checkbox';
-    const tf = checkBtn.checked;
-
-    checkBtn.onchange = () => element
-    
-    
 
     deleteButton.onclick = deleteTodo;
     deleteButton.id = todo.id;
