@@ -13,7 +13,7 @@ const render = () => {
     const cont = document.createElement('div')
     const deleteButton = document.createElement('button')
     deleteButton.innerText = 'Delete';
-    deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 5px;"
+    deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px;"
 
     cont.innerText = listItem;
    
