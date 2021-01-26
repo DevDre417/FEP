@@ -1,4 +1,6 @@
 
+//Model
+
 const render = () => {
   const ser = document.getElementById('inp');
   
@@ -11,18 +13,24 @@ const render = () => {
     const cont = document.createElement('div')
     const deleteButton = document.createElement('button')
     deleteButton.innerText = 'Delete';
-
+    deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 5px;"
 
     cont.innerText = listItem;
-    deleteButton.innerText = 'delete';
+   
 
 
-    container.appendChild(cont);
     cont.appendChild(deleteButton);
+    container.appendChild(cont);
+   
   }
 }
 
 
 render();
 
+//View
+
+
+
+//Controller
 
