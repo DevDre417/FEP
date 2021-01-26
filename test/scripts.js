@@ -7,9 +7,18 @@ const render = () => {
 
   const addButton = document.getElementById('addB');
   addButton.onclick = () => {
-const newd = document.createElement('div');
-container.appendChild(newd);
-newd.innerText = ser.value;
+    const listItem = ser.value;
+    const cont = document.createElement('div')
+    const deleteButton = document.createElement('button')
+    deleteButton.innerText = 'Delete';
+
+
+    cont.innerText = listItem;
+    deleteButton.innerText = 'delete';
+
+
+    container.appendChild(cont);
+    cont.appendChild(deleteButton);
   }
 }
 
