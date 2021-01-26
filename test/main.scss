@@ -5,6 +5,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
@@ -12,10 +14,12 @@ html {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  align-items: center;
+  background-color: antiquewhite;
 }
 
 #enterTodo {
+  display: flex;
+  justify-content: center;
 }
 
 #todoContainer {
