@@ -10,7 +10,7 @@ const render = () => {
   const addButton = document.getElementById('addB');
 
   addButton.onclick = () => {
-      if(ser.value === ''){
+      if(ser.value == '' || ser.value == null || ser.value == ' '){
         const x = 1;
       }else{
         let id = new Date().getTime();
