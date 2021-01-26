@@ -11,7 +11,7 @@ const render = () => {
 
   addButton.onclick = () => {
       if(ser.value == '' || ser.value == null || ser.value == ' ' || ser.value == undefined){
-        const x = 1;
+        const z = 1;
       }else{
         let id = new Date().getTime();
 
