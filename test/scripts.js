@@ -25,6 +25,9 @@ const render = () => {
         cont.innerText = listItem;
         cont.appendChild(deleteButton);
         container.appendChild(cont);
+
+        ser.value = ''
+
     
         //Delete Button
         deleteButton.onclick = () => {
