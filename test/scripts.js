@@ -9,10 +9,12 @@ const render = () => {
 
   const addButton = document.getElementById('addB');
 
+  let ser = ser.value.trim().split(/ +/).join(" ");
+
   //Add List Item
   addButton.onclick = () => {
-      if(ser.value == '' || ser.value.indexOf(' ') >= 0){
-        const z = 1;
+      if(!ser){
+        return
       }else{
         let id = new Date().getTime();
 
