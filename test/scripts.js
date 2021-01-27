@@ -13,6 +13,7 @@ const render = () => {
   addButton.onclick = () => {
       if(ser.value == '' || ser.value.indexOf(' ') >= 0){
         const z = 1;
+          ser.value = ''
       }else{
         let id = new Date().getTime();
 
