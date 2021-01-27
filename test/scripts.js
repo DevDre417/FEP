@@ -13,7 +13,6 @@ const render = () => {
   addButton.onclick = () => {
       if(ser.value == '' || ser.value.indexOf(' ') >= 0){
         const z = 1;
-          ser.value = ''
       }else{
         let id = new Date().getTime();
 
@@ -26,9 +25,6 @@ const render = () => {
         cont.innerText = listItem;
         cont.appendChild(deleteButton);
         container.appendChild(cont);
-
-        ser.value = ''
-
     
         //Delete Button
         deleteButton.onclick = () => {
