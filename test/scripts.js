@@ -9,6 +9,7 @@ const render = () => {
 
   const addButton = document.getElementById('addB');
 
+  //Add List Item
   addButton.onclick = () => {
       if(ser.value == '' || ser.value.indexOf(' ') >= 0){
         const z = 1;
