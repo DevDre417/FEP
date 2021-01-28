@@ -21,7 +21,7 @@ const render = () => {
         cont.appendChild(deleteButton);
         container.appendChild(cont);
     
-        ser.value = ''
+        ser.value = '';
 
         //Delete Button
         deleteButton.onclick = () => {

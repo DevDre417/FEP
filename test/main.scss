@@ -33,6 +33,9 @@ body {
     border-radius: 10px;
     outline: none;
   }
+  #clearB {
+    @extend #inp;
+  }
 }
 
 #todoContainer {
