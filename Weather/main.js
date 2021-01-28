@@ -3,7 +3,6 @@ const api = {
   base: "https://api.openweathermap.org/data/2.5/"
 } 
 
-document.body.style = "background-image: url('images/sunny.jpg');"
 
 const searchBx = document.querySelector('.search-box');
 searchBx.addEventListener('keypress', setQuery);
