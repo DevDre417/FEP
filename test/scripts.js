@@ -2,9 +2,9 @@
 //Model
 
 const render = () => {
-  let ser = document.getElementById('inp');
-  const container = document.getElementById('todoContainer');
-  const addButton = document.getElementById('addB');
+  let ser = document.querySelector('#inp');
+  const container = document.querySelector('#todoContainer');
+  const addButton = document.querySelector('#addB');
 
   //Add List Item
   addButton.onclick = () => {
