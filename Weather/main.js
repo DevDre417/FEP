@@ -4,6 +4,9 @@ const api = {
 };
 
 const searchBx = document.querySelector(".search-box");
+searchBx.value = 'Grenada';
+getResults(searchBx.value)
+searchBx.value = '';
 searchBx.addEventListener("keypress", setQuery);
 
 function setQuery(evt) {
