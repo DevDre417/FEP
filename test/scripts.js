@@ -5,6 +5,10 @@ const render = () => {
   let ser = document.querySelector('#inp');
   const container = document.querySelector('#todoContainer');
   const addButton = document.querySelector('#addB');
+  const clearButton = document.querySelector('#clearB');
+
+  clearButton.style = 'padding: 10px; font-size: 22px; margin-top: 10px; border-radius: 10px; outline: none;'
+
 
   //Add List Item
   addButton.onclick = () => {
