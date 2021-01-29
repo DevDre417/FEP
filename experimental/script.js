@@ -6,7 +6,7 @@ const greenBx = document.querySelector('.child');
 
       console.log('red')
     
-  },{capture: true})
+  },{capture: false})
 
   blueBx.addEventListener("click", e => {
 
@@ -16,13 +16,13 @@ const greenBx = document.querySelector('.child');
 
 greenBx.addEventListener("click", e => {
 
-  console.log('green')
+  console.log('green');
 
 })
 
 
 document.addEventListener("click", e => {
 
-  console.log('doc')
+  console.log('doc');
 
 })
