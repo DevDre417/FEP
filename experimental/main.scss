@@ -5,6 +5,10 @@ body {
   align-items: center;
 }
 
+.container {
+  max-width: 100%;
+}
+
 .grandParent {
   display: flex;
   align-items: center;
@@ -26,8 +30,4 @@ body {
     height: 150px;
     background-color: rgb(128, 209, 128);
   }
-}
-
-.container {
-  max-width: 100%;
 }
