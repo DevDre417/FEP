@@ -2,8 +2,27 @@ const redBx = document.querySelector('.grandParent');
 const blueBx = document.querySelector('.parent');
 const greenBx = document.querySelector('.child');
 
-  greenBx.addEventListener("click", e => {
+  redBx.addEventListener("click", e => {
 
-      console.log(e.target)
+      console.log('red')
     
-  })
+  },{capture: true})
+
+  blueBx.addEventListener("click", e => {
+
+    console.log('blue')
+  
+})
+
+greenBx.addEventListener("click", e => {
+
+  console.log('green')
+
+})
+
+
+document.addEventListener("click", e => {
+
+  console.log('doc')
+
+})
