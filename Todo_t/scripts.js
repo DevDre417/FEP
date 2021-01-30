@@ -10,7 +10,7 @@
     const deleteButton = document.createElement('button')
     let id = new Date().getTime();
 
-   
+
 
       if(ser.value !== ''){
         const cont = document.createElement('div')
@@ -42,10 +42,8 @@ render();
 
 
 
-ser.value.addEventListener("input", val => {
-  if(val.keycode == 13){
-        console.log('12')
-  }
-})
+ser.addEventListener("keypress", enter)
 
-
+function enter(keypressed){
+  if(keypressed == 13) console.log('13');
+}
