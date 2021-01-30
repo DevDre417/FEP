@@ -3,16 +3,17 @@
   const addButton = document.querySelector('#addB');
   const clearButton = document.querySelector('#clearB');
   const cleerButton = document.querySelector('#cleerB');
-  const savedState = localStorage.getItem('tasks');
-  
-const saveState = () => localStorage.setItem('tasks', container);
-
-if (savedState){
-  
-}
-
-
   clearButton.style.color = "red";
+
+
+  const savedState = localStorage.getItem('list');
+
+  const saverino =() => localStorage.setItem('list', container.innerHTML);
+  
+  if(savedState) {
+    container.innerHTML = savedState;
+  }
+
 
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
@@ -28,14 +29,16 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-
+    
   }
-  saveState();
+  saverino();
+
   ser.value = '';
 }
 addButton.onclick = addValue;
 cleerButton.onclick = () => {
   container.innerHTML = '';
-  saveState();
+  saverino();
 }
 ///////////////////////////////////
+
