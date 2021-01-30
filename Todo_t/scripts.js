@@ -24,5 +24,6 @@ const addValue = () => {
   }
 }
 addButton.onclick = addValue;
+cleerButton.onclick = () => container.innerHTML = '';
 ///////////////////////////////////
 
