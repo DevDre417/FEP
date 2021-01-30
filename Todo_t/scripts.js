@@ -2,7 +2,7 @@
   const container = document.querySelector('#todoContainer');
   const addButton = document.querySelector('#addB');
   const clearButton = document.querySelector('#clearB');
-  
+  const cleerButton = document.querySelector('#cleerB');
   clearButton.style.color = "red";
 
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
@@ -24,5 +24,5 @@ const addValue = () => {
   }
 }
 addButton.onclick = addValue;
-
+///////////////////////////////////
 
