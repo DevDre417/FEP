@@ -3,6 +3,15 @@
   const addButton = document.querySelector('#addB');
   const clearButton = document.querySelector('#clearB');
   const cleerButton = document.querySelector('#cleerB');
+  const savedState = localStorage.getItem('tasks');
+
+  if (savedState){
+      container.innerHTML = ser.value;
+  }
+
+const saveState = () => localStorage.setItem('tasks', ser.value);
+  
+
   clearButton.style.color = "red";
 
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
@@ -19,11 +28,12 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-
+  
+  saveState();
   ser.value = '';
   }
 }
 addButton.onclick = addValue;
 cleerButton.onclick = () => container.innerHTML = '';
 ///////////////////////////////////
-
+saveState();
