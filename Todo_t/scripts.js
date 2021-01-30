@@ -4,11 +4,18 @@
   const clearButton = document.querySelector('#clearB');
   
   clearButton.style.color = "red";
-  //Add List Item
 
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
+  
+ //Remove List item 
 
+
+
+
+
+
+//Add List Item
 const addValue = () => {
   if (/\S/.test(ser.value)) {
   const cont = document.createElement('div');
@@ -25,3 +32,5 @@ const addValue = () => {
   }
 }
 addButton.onclick = addValue;
+
+
