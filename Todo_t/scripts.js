@@ -29,11 +29,10 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  
-  
-  ser.value = '';
+
   }
   saveState();
+  ser.value = '';
 }
 addButton.onclick = addValue;
 cleerButton.onclick = () => container.innerHTML = '';
