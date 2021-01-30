@@ -9,7 +9,7 @@
 const saveState = () => localStorage.setItem('tasks', container);
 
 if (savedState){
-  
+  container.textContent = 
 }
 
 
@@ -35,6 +35,8 @@ const addValue = () => {
   ser.value = '';
 }
 addButton.onclick = addValue;
-cleerButton.onclick = () => container.innerHTML = '';
+cleerButton.onclick = () => {
+  container.innerHTML = '';
+  saveState();
+}
 ///////////////////////////////////
-saveState();
