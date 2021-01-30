@@ -14,11 +14,11 @@
 const addValue = () => {
   if (/\S/.test(ser.value)) {
   const cont = document.createElement('div');
-  const deleteButton = document.createElement('button')
+  const deleteButton = document.createElement('button');
   let id = new Date().getTime();
   cont.id = id;
-  deleteButton.innerText = 'Delete';
-  deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px;"
+  deleteButton.innerText = 'x';
+  deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px; color: red;"
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
@@ -29,8 +29,8 @@ const addValue = () => {
 addButton.onclick = addValue;
 
  //Remove List item 
- const removeValue = () => {
- 
+const removeValue = () => {
+
   const x = document.getElementById(id);
   x.innerHTML = '';
 }
