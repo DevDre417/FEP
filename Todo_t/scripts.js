@@ -1,16 +1,17 @@
   const ser = document.querySelector('#inp');
-  const container = document.querySelector('#todoContainer');
+  let container = document.querySelector('#todoContainer');
   const addButton = document.querySelector('#addB');
   const clearButton = document.querySelector('#clearB');
   const cleerButton = document.querySelector('#cleerB');
   const savedState = localStorage.getItem('tasks');
 
-  if (savedState){
-      container.innerHTML = ser.value;
-  }
-
-const saveState = () => localStorage.setItem('tasks', ser.value);
   
+const saveState = () => localStorage.setItem('tasks', container);
+
+if (savedState){
+  
+}
+
 
   clearButton.style.color = "red";
 
@@ -29,9 +30,10 @@ const addValue = () => {
   cont.appendChild(deleteButton);
   container.appendChild(cont);
   
-  saveState();
+  
   ser.value = '';
   }
+  saveState();
 }
 addButton.onclick = addValue;
 cleerButton.onclick = () => container.innerHTML = '';
