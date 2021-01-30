@@ -4,12 +4,11 @@
   const clearButton = document.querySelector('#clearB');
   const cleerButton = document.querySelector('#cleerB');
   const savedState = localStorage.getItem('tasks');
-
   
 const saveState = () => localStorage.setItem('tasks', container);
 
 if (savedState){
-  container.textContent = 
+  
 }
 
 
