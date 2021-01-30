@@ -5,16 +5,17 @@
   const cleerButton = document.querySelector('#cleerB');
   clearButton.style.color = "red";
 
+//Local SaveState
+const savedState = localStorage.getItem('list');
+const saverino =() => localStorage.setItem('list', container.innerHTML);
 
-  const savedState = localStorage.getItem('list');
-
-  const saverino =() => localStorage.setItem('list', container.innerHTML);
-  
   if(savedState) {
     container.innerHTML = savedState;
   }
 
+/////////////
 
+///Input Listener
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
 
