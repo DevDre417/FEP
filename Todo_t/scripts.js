@@ -5,11 +5,14 @@
   clearButton.style.color = "red";
   //Add List Item
 
+  ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue(ser.value)});
+  
+
+
   const render = () => {
   addButton.onclick = () => {
     const deleteButton = document.createElement('button')
     let id = new Date().getTime();
-
 
 
       if(ser.value !== ''){
@@ -23,8 +26,6 @@
         container.appendChild(cont);
     
         ser.value = '';
-
-
       }
 
 //Delete Button
@@ -35,15 +36,10 @@
   }
 }
 
+
 render();
 
 
 
 
 
-
-ser.addEventListener("keypress", enter)
-
-function enter(keypressed){
-  if(keypressed == 13) console.log('13');
-}
