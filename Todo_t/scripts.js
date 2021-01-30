@@ -8,11 +8,6 @@
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
   
- //Remove List item 
-
-
-
-
 
 
 //Add List Item
@@ -32,5 +27,12 @@ const addValue = () => {
   }
 }
 addButton.onclick = addValue;
+
+ //Remove List item 
+ const removeValue = () => {
+ 
+  const x = document.getElementById(id);
+  x.innerHTML = '';
+}
 
 
