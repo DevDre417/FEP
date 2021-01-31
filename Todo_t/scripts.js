@@ -22,12 +22,6 @@ const delrino = () => localStorage.setItem('add', container.innerHTML);
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
 
-  const delbb = () => {
-    container.innerHTML = '';
-    localStorage.setItem('delll', container.innerHTML)
-    const saveddel = localStorage.getItem('delll');
-  }
-
 //Add List Item
 const addValue = () => {
   if (/\S/.test(ser.value)) {
@@ -35,11 +29,11 @@ const addValue = () => {
   const deleteButton = document.createElement('button');
   deleteButton.innerText = 'x';
   deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px; color: red;";
-  deleteButton.onclick = () => cont.innerHTML = '';
+  deleteButton.onclick = cont.innerHTML = '';
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  cleerButton.onclick = delbb;
+  cleerButton.onclick = cont.innerHTML = '';
   }
   ser.value = '';
   saverino();
