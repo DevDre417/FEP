@@ -31,6 +31,8 @@ const addValue = () => {
   deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px; color: red;";
   deleteButton.onclick = () => {
     cont.innerHTML = '';
+    localStorage.getItem('item')
+  saverino();
     localStorage.removeItem('item');
   }
   cont.innerText = ser.value;
