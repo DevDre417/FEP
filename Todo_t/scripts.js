@@ -16,6 +16,7 @@ const saverino = () => localStorage.setItem('ad', container.innerHTML);
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
 
+  
 //Add List Item
 const addValue = () => {
   if (/\S/.test(ser.value)) {
@@ -32,7 +33,6 @@ const addValue = () => {
   ser.value = '';
   saverino();
 }
-
 addButton.onclick = addValue;
 
 
