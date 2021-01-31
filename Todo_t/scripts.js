@@ -44,16 +44,8 @@ const addValue = () => {
     container.innerHTML = '';
     localStorage.removeItem('ad')
   }
-  }
-
-  
   ser.value = '';
+  }
 ///
 addButton.onclick = addValue;
-
-
-
-
 ///////////////////////////////////
-
-//extras
