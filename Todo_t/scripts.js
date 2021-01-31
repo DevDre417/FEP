@@ -30,7 +30,9 @@ const addValue = () => {
   container.appendChild(cont);
   cleerButton.onclick = () => {
     container.innerHTML = '';
-    localStorage.removeItem('ad');
+    localStorage.setItem('container', container)
+    localStorage.getItem('container')
+    localStorage.removeItem('container');
   }
   }
   ser.value = '';
