@@ -6,10 +6,15 @@
   clearButton.style.color = "red";
 
 //Local SaveState
+//container
 const savedState = localStorage.getItem('ad');
 const saverino = () => localStorage.setItem('ad', container.innerHTML);
-
 (savedState) ? container.innerHTML = savedState: 1+1;
+//item
+
+
+
+
 
 
 ///Input Listener
@@ -24,10 +29,14 @@ const addValue = () => {
   const deleteButton = document.createElement('button');
   deleteButton.innerText = 'x';
   deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px; color: red;";
-  deleteButton.onclick = () => cont.innerHTML = '';
+  deleteButton.onclick = () => {
+    cont.innerHTML = '';
+    localStorage.removeItem('item');
+  }
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
+  const itemerino = () => localStorage.setItem('item', cont.innerText)
   saverino();
 }
   cleerButton.onclick = () => {
