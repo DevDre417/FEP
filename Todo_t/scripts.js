@@ -12,7 +12,7 @@ const saverino = () => localStorage.setItem('ad', container.innerHTML);
 ///
 
 //Input Listener
-  ser.addEventListener("keypress", enter => {  (enter.keyCode == 13) ? addValue(): null});
+  ser.addEventListener("keypress", enter => {  if (enter.keyCode == 13)  {addValue();} ser.value = '';} );
 ///
 
 
@@ -45,6 +45,8 @@ const addValue = () => {
     localStorage.removeItem('ad')
   }
   }
+
+  
   ser.value = '';
 ///
 addButton.onclick = addValue;
@@ -54,3 +56,4 @@ addButton.onclick = addValue;
 
 ///////////////////////////////////
 
+//extras
