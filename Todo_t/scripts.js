@@ -32,9 +32,6 @@ const addValue = () => {
 }
   cleerButton.onclick = () => {
     container.innerHTML = '';
-    localStorage.setItem('container', container)
-    localStorage.getItem('container')
-    localStorage.removeItem('container');
     localStorage.removeItem('ad')
   }
   }
