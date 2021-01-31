@@ -6,21 +6,13 @@
   clearButton.style.color = "red";
 
 //Local SaveState
-//container
 const savedState = localStorage.getItem('ad');
 const saverino = () => localStorage.setItem('ad', container.innerHTML);
-(savedState) ? container.innerHTML = savedState: 1+1;
-//item
-
-
-
-
+(savedState) ? container.innerHTML = savedState: null;
 
 
 ///Input Listener
-  ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
-  
-
+  ser.addEventListener("keypress", enter => {  (enter.keyCode == 13) ? addValue(): null});
   
 //Add List Item
 const addValue = () => {
