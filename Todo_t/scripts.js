@@ -23,11 +23,11 @@ const addValue = () => {
   const deleteButton = document.createElement('button');
   deleteButton.innerText = 'x';
   deleteButton.style = "margin-left: 5px; margin:top: 5px;font-size: 18px; position: relative; bottom: 6px; padding: 3px; color: red;";
-  deleteButton.onclick = cont.innerHTML = '';
+  deleteButton.onclick = () => cont.innerHTML = '';
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  cleerButton.onclick = cont.innerHTML = '';
+  cleerButton.onclick = () => cont.innerHTML = '';
   }
   ser.value = '';
   saverino();
