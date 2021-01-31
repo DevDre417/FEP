@@ -1,19 +1,20 @@
   const ser = document.querySelector('#inp');
-  let container = document.querySelector('#todoContainer');
+  const container = document.querySelector('#todoContainer');
   const addButton = document.querySelector('#addB');
   const clearButton = document.querySelector('#clearB');
   const cleerButton = document.querySelector('#cleerB');
   clearButton.style.color = "red";
 
 //Local SaveState
-const savedState = localStorage.getItem('list');
-const saverino =() => localStorage.setItem('list', container.innerHTML);
+const savedState = localStorage.getItem('ad');
+const saverino = () => localStorage.setItem('ad', container.innerHTML);
+const delrino = () => localStorage.getItem('ad');
 
-  if(savedState) {
-    container.innerHTML = savedState;
-  }
+(savedState) ? container.innerHTML = savedState: 1+1;
 
 /////////////
+
+
 
 ///Input Listener
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
@@ -30,17 +31,16 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-    
-  }
-  saverino();
+  cleerButton.onclick = () => container.innerHTML = '';
 
+  }
   ser.value = '';
 }
+
 addButton.onclick = addValue;
-cleerButton.onclick = () => {
-  container.innerHTML = '';
-  
-}
-saverino();
+
+
+
+
 ///////////////////////////////////
 
