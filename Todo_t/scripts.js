@@ -27,7 +27,7 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  cleerButton.onclick = () => cont.innerHTML = '';
+  cleerButton.onclick = () => container.innerHTML = '';
   }
   ser.value = '';
   saverino();
