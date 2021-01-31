@@ -8,14 +8,8 @@
 //Local SaveState
 const savedState = localStorage.getItem('ad');
 const saverino = () => localStorage.setItem('ad', container.innerHTML);
-const deldrino = localStorage.getItem('add');
-const delrino = () => localStorage.setItem('add', container.innerHTML);
-
 
 (savedState) ? container.innerHTML = savedState: 1+1;
-// (deldrino) ? container.innerHTML = deldrino : 1+1;
-// /////////////
-
 
 
 ///Input Listener
