@@ -8,17 +8,25 @@
 //Local SaveState
 const savedState = localStorage.getItem('ad');
 const saverino = () => localStorage.setItem('ad', container.innerHTML);
-const delrino = () => localStorage.getItem('ad');
+const deldrino = localStorage.getItem('add');
+const delrino = () => localStorage.setItem('add', container.innerHTML);
+
 
 (savedState) ? container.innerHTML = savedState: 1+1;
-
-/////////////
+// (deldrino) ? container.innerHTML = deldrino : 1+1;
+// /////////////
 
 
 
 ///Input Listener
   ser.addEventListener("keypress", enter => { if (enter.keyCode == 13) addValue()});
   
+
+  const delbb = () => {
+    container.innerHTML = '';
+    localStorage.setItem('delll', container.innerHTML)
+    const saveddel = localStorage.getItem('delll');
+  }
 
 //Add List Item
 const addValue = () => {
@@ -31,10 +39,10 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  cleerButton.onclick = () => container.innerHTML = '';
-
+  cleerButton.onclick = delbb;
   }
   ser.value = '';
+  saverino();
 }
 
 addButton.onclick = addValue;
