@@ -28,7 +28,10 @@ const addValue = () => {
   cont.innerText = ser.value;
   cont.appendChild(deleteButton);
   container.appendChild(cont);
-  cleerButton.onclick = () => container.innerHTML = '';
+  cleerButton.onclick = () => {
+    container.innerHTML = '';
+    localStorage.removeItem('ad');
+  }
   }
   ser.value = '';
   saverino();
