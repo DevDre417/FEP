@@ -77,14 +77,14 @@
     max-width: 300px;
   }
 }
-@media only screen and (max-width: 312px) {
+@media only screen and (max-width: 293px) {
   .underTxt {
     max-width: 250px;
   }
 }
 
 ///////////////////Super Small/////////
-@media only screen and (max-width: 273px) {
+@media only screen and (max-width: 312px) {
   #skills-container {
     flex-direction: column;
     min-width: 0;
