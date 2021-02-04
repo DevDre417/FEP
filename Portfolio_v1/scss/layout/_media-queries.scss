@@ -52,8 +52,8 @@
     gap: 0;
     flex-direction: row;
 
-    #frontend,
-    #backend {
+    #fe,
+    #be {
       padding: 10px;
     }
   }
@@ -84,13 +84,13 @@
 }
 
 ///////////////////Super Small/////////
-@media only screen and (max-width: 312px) {
+@media only screen and (max-width: 372px) {
   #skills-container {
     flex-direction: column;
     min-width: 0;
   }
-  #frontend,
-  #backend {
+  #fe,
+  #be {
     padding: 0;
     margin: 0;
   }

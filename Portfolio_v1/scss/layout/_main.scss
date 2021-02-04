@@ -155,16 +155,13 @@ li:hover {
   background-image: url("../../img/product.jpg");
 }
 
-
 #prj3 {
   background-image: url("../../img/technical.jpg");
 }
 
-
 #prj4 {
   background-image: url("../../img/tribute.jpg");
 }
-
 
 ///////////////////Skulls & CONTACT/////////////////////////
 #skills_contact-container {
@@ -176,8 +173,8 @@ li:hover {
   font-size: clamp(12px, 1.25vw, 20px);
   #skills-container {
     display: flex;
-    #frontend,
-    #backend {
+    #fe,
+    #be {
       padding: 15px;
     }
   }
